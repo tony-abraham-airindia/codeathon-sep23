@@ -17,8 +17,12 @@ def test_sort_list_4():
         list_number.append(i)
     assert(sort_list(list_number)==list_number)
 
+def test_sort_list_5():
+    assert(sort_list([1,2,3,4,5,6,7,8,9])==[1,2,3,4,5,6,7,8,9])
+
     
 test_sort_list_1()
 test_sort_list_2()
 test_sort_list_3()
 test_sort_list_4()
+test_sort_list_5()
