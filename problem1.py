@@ -6,18 +6,18 @@
 # tree	eetr
 # Tasks
 
-
-s=['hello world','tree']
-for i in s:
+def sort_s(s):
     d={}
-    for j in i:
+    for j in s:
         if j in d:
             d[j]+=1
         else:
             d[j]=1
     # print(d)
     l=sorted(d.items(),key=lambda x:x[1],reverse=True)
-    # print(l)
-    for i in l:
-        print(i[0]*i[1],end='')
-    print()
+    ans=''
+    for s in l:
+        # print(s[0]*s[1],end='')
+        ans+=s[0]*s[1]
+    # print()
+    return ans
