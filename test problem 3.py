@@ -14,6 +14,15 @@ def test_validate_ip_2():
 def test_validate_ip_3():
     assert(validate_ip('256.255.0.0')==False)
 
+def test_validate_ip_4():
+    assert(validate_ip('-1.22,23.23.23')==False)
+
+def test_validate_ip_5():
+    assert(validate_ip('')==False)
+
+
 test_validate_ip_1()
 test_validate_ip_2()
 test_validate_ip_3()
+test_validate_ip_4()
+test_validate_ip_5()
